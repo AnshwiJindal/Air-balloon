@@ -13,7 +13,7 @@ function preload(){
 //Function to set initial environment
 function setup() {
   database=firebase.database();
-  createCanvas(100,700);
+  createCanvas(800,700);
 
 var balloonPosition=database.ref('Balloon/height')
 balloonPosition.on("value",readPosition,showError)
